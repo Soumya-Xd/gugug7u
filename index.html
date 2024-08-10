@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Safety App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Women Safety App</h1>
+        <form id="registration-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Mobile Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            <label for="voice-command">Voice Command:</label>
+            <input type="text" id="voice-command" name="voice-command" required>
+            <button type="submit">Register</button>
+        </form>
+        <button id="start-recording" disabled>Start Recording</button>
+        <button id="stop-recording" disabled>Stop Recording</button>
+        <video id="video-preview" controls></video>
+    </div>
+    <script src="app.js"></script>
+    <script src="service-worker.js"></script>
+    <script src="cloud-upload.js"></script>
+</body>
+</html>
